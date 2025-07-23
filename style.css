@@ -1,11 +1,9 @@
-
-.noto-serif{
+.noto-serif {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
-  font-weight:normal;
+  font-weight: normal;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
 .inter {
@@ -14,45 +12,72 @@
   font-weight: normal;
   font-style: normal;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px 150px auto 150px;
+/* navbar style */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 150px auto 150px;
 }
-nav ul{
-    list-style: none;
-    display: flex;
-    color: none;
-    
+nav ul {
+  list-style: none;
+  display: flex;
+  color: none;
 }
-.without-icon-menu{
-    display: flex;
-    
+.without-icon-menu {
+  display: flex;
 }
-nav ul li{
-    
-    margin-right: 3rem;
-} 
-nav ul a{
-    text-decoration: none;
-    color: black;
+nav ul li {
+  margin-right: 3rem;
 }
-.menu-items{
-    margin-right: 20px;
+nav ul a {
+  text-decoration: none;
+  color: black;
 }
-
-
-
+.menu-items {
+  margin-right: 20px;
+}
+/* banner style */
+.banner {
+  display: flex;
+  margin: 120px 150px auto 150px;
+}
+.banner-content,
+.banner-img {
+  width: 50%;
+}
+.banner-content {
+  margin-top: 65px;
+}
 
 /* for mobile devices */
-@media screen  and (max-width:576px){
-     .without-icon-menu{
-        display: none;
-     }
-     nav{
-        justify-content: space-between;
-        gap: 275px;
-        margin: 0px;
-     }
+@media screen and (max-width: 576px) {
+  body {
+    margin: auto 16px auto 16px;
+  }
+  .without-icon-menu {
+    display: none;
+  }
+  nav {
+    justify-content: space-between;
+    gap: 275px;
+    margin: 0px;
+  }
+  .cart {
+    width: 125px;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    margin: 16px auto auto 16px;
+  }
+  .banner-img {
+    width: 300px;
+    margin-bottom: 28px;
+  }
+  .banner-content {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+  }
 }
