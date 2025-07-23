@@ -26,14 +26,33 @@ nav ul{
     color: none;
     
 }
+.without-icon-menu{
+    display: flex;
+    
+}
 nav ul li{
     
     margin-right: 3rem;
-}
+} 
 nav ul a{
     text-decoration: none;
     color: black;
 }
 .menu-items{
     margin-right: 20px;
+}
+
+
+
+
+/* for mobile devices */
+@media screen  and (max-width:576px){
+     .without-icon-menu{
+        display: none;
+     }
+     nav{
+        justify-content: space-between;
+        gap: 275px;
+        margin: 0px;
+     }
 }
