@@ -12,7 +12,10 @@
   font-weight: normal;
   font-style: normal;
 }
-/* navbar style */
+ body{
+  max-width: 1590px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -100,17 +103,13 @@ nav ul a {
 .plant-lover{
   margin: 120px 150px auto 150px;
   display: flex;
-  justify-content: space-between;
 }
 .lover-contents{
   padding: 5px 0;
   width: 50%;
   align-items: end;
 }
-.plant-lover img{
-  width: 100%;
-  height: 100%;
-}
+
 .lover-contents h2{
  font-weight: bold; 
  font-size: 3.12rem;
@@ -121,6 +120,19 @@ nav ul a {
   font-weight: 400;
   font-size: 1.38rem;
   color: rgba(0, 0, 0, 0.5);
+}
+.plant-img{
+  background-image: url(./assets/flower-store.png);
+  background-repeat: no-repeat;
+  width: 50%;
+}
+.hide-img{
+  display: none;
+}
+.badge{
+ margin-left: 70%;
+margin-top: -70px;
+ 
 }
 
 /* for mobile devices */
@@ -179,12 +191,18 @@ nav ul a {
   flex-direction: column;
   width: 100%;
   margin: 50px 16px auto 16px;
-  
-  
+  }
+ .lover-contents{
+   width: 595px;
+  }
+  .badge{
+    display: none;
+  }
+  .plant-img{
+  ;
+  width: 50%;
 }
-.plant-lover img ,.lover-contents{
-  width: 595px;
+.hide-img{
+  display: block;
 }
- 
-
 }
