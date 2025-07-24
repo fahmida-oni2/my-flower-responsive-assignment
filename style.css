@@ -16,8 +16,8 @@
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 30px 150px auto 150px;
+  align-items: end;
+  margin: 30px 140px auto 150px;
 }
 nav ul {
   list-style: none;
@@ -40,14 +40,61 @@ nav ul a {
 /* banner style */
 .banner {
   display: flex;
-  margin: 120px 150px auto 150px;
+  margin: 120px 140px auto 150px;
+  align-items: end;
 }
 .banner-content,
 .banner-img {
   width: 50%;
 }
-.banner-content {
-  margin-top: 65px;
+
+/* plant section */
+.plant-description{
+  text-align: center;
+  margin: 120px 140px 10px 150px;
+}
+.plant-h2{
+  margin-bottom: 10px;
+}
+.plant-p{
+  margin: 0 180px auto 180px;
+}
+/* card-items */
+.plant-card{
+  margin: 120px 140px auto 150px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  row-gap: 30px;
+
+ 
+}
+.card-items{
+  width: 250px;
+  border: none;
+  overflow: hidden;
+  text-align: center;
+
+
+}
+.flower-details{
+ margin: auto 30px 15px 30px;
+}
+.flower-name, .flower-price{
+  font-weight: 500;
+  font-size: 1.38rem; 
+  color: #111111;"
+  
+}
+.btn-style{
+  width: 250px;
+  height: 50px;
+  color: white;
+  background-color: #E95A08;
+  text-align: center;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+
 }
 
 /* for mobile devices */
@@ -60,8 +107,9 @@ nav ul a {
   }
   nav {
     justify-content: space-between;
-    gap: 275px;
-    margin: 0px;
+    align-items: end;
+    gap: 300px;
+     margin: auto 16px auto 16px;
   }
   .cart {
     width: 125px;
@@ -72,7 +120,8 @@ nav ul a {
     margin: 16px auto auto 16px;
   }
   .banner-img {
-    width: 300px;
+    width: 80%;
+     margin: auto 30px auto 16px;
     margin-bottom: 28px;
   }
   .banner-content {
@@ -80,4 +129,29 @@ nav ul a {
     height: fit-content;
     margin: auto;
   }
+  .plant-description{
+    width: 100%;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .plant-h2{
+    width: 100%;
+    text-align: center;
+  }
+   .plant-p{
+    width: 100%;
+    margin-left: 10px;
+  }
+  .plant-card{
+   margin: auto 16px auto 16px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:100px;
+  width: 100%;
+  
+
+ 
+}
+ 
+
 }
