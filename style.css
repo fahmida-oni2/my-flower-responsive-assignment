@@ -13,7 +13,7 @@
   font-style: normal;
 }
  body{
-  max-width: 1590px;
+  max-width: 1440px;
 }
 
 nav {
@@ -52,14 +52,14 @@ nav ul a {
 }
 
 /* plant section */
-.plant-description{
+.plant-description,.deal{
   text-align: center;
   margin: 120px 150px 10px 150px;
 }
-.plant-h2{
+.plant-h2, .deal-h2{
   margin-bottom: 10px;
 }
-.plant-p{
+.plant-p,.deal-p{
   margin: 0 180px auto 180px;
 }
 /* card-items */
@@ -135,6 +135,24 @@ margin-top: -70px;
  
 }
 
+/* join section */
+.join-section{
+  background-image: url('./assets/news-letter-bg.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: center;
+  height: 1400px;
+  margin-top: 120px;
+  padding-top: 120px;
+}
+
+.subscriber-option{
+  justify-content: space-around;
+  
+}
+
+
+
 /* for mobile devices */
 @media screen and (max-width: 576px) {
   body {
@@ -167,18 +185,21 @@ margin-top: -70px;
     height: fit-content;
     margin: auto;
   }
-  .plant-description{
+  .plant-description,.deal{
     width: 100%;
     align-items: center;
     margin-bottom: 50px;
+    margin-left:35%;
   }
-  .plant-h2{
+  .plant-h2,.deal-h2{
     width: 100%;
     text-align: center;
   }
-   .plant-p{
-    width: 100%;
-    margin-left: 10px;
+   .plant-p,.deal-p{
+    width: 400px;
+    text-align: center;
+    margin-left: 0.1px;
+    
   }
   .plant-card{
    margin: auto 16px auto 16px;
@@ -204,5 +225,14 @@ margin-top: -70px;
 }
 .hide-img{
   display: block;
+}
+.join-section{
+  width: 600px;
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 50px;
+}
+.subscriber-option{
+  display: flex;
 }
 }
