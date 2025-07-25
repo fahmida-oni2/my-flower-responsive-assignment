@@ -40,6 +40,9 @@ nav ul a , footer ul a{
 .menu-items {
   margin-right: 20px;
 }
+.cart{
+  margin-right: 0px;
+}
 /* banner style */
 .banner {
   display: flex;
@@ -160,6 +163,12 @@ footer ul{
 .footer-icon img{
   margin-right: 20px;
 }
+.footer-home ul li,.footer-features ul li{
+  margin-bottom:30px;
+}
+.footer-logo{
+  width: 25%;
+}
 
 
 /* for mobile devices */
@@ -243,5 +252,15 @@ footer ul{
 }
 .subscriber-option{
   display: flex;
+}
+footer{
+  display: block;
+}
+.footer-logo{
+  width: 595px;
+}
+.footer-home ,.footer-features {
+  margin-left:16px;
+ 
 }
 }
